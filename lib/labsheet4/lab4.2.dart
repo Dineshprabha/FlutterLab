@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ProfileCard extends StatelessWidget {
+  const ProfileCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +22,11 @@ class MyApp extends StatelessWidget {
 
         body: Center(
           child: Card(
-            elevation: 28,
+            elevation: 20,
 
             child: Container(
               width: 350,
-              padding: const EdgeInsets.all(60),
+              padding: const EdgeInsets.all(80),
 
               child: Column(
                 mainAxisSize: MainAxisSize.min,

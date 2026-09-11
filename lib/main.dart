@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'labsheet5/5_2/contact_page.dart';
 
-import 'labsheet7/7_2/college_app.dart';
 
 void main() {
-  runApp(const CollegeApp());
+  runApp(const Contacts());
 }
+
 

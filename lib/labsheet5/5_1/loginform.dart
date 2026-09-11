@@ -20,7 +20,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
   // Controllers
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -34,10 +33,7 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(
         title: const Text(
           "Login Form",
-          style: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
@@ -53,11 +49,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-
-                const Icon(
-                  Icons.account_circle,
-                  size: 100,
-                ),
+                const Icon(Icons.account_circle, size: 100),
 
                 const SizedBox(height: 20),
 
@@ -97,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
                     labelText: "Password",
                     hintText: "Enter your password",
                     border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.lock),
+                    suffixIcon: Icon(Icons.lock),
                   ),
 
                   validator: (value) {
@@ -118,9 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                 // Login Button
                 ElevatedButton(
                   onPressed: () {
-
                     if (formKey.currentState!.validate()) {
-
                       String email = emailController.text;
                       String password = passwordController.text;
 
@@ -128,19 +118,11 @@ class _LoginPageState extends State<LoginPage> {
                       print("Password: $password");
 
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text("Login Successful"),
-                        ),
+                        const SnackBar(content: Text("Login Successful")),
                       );
                     }
                   },
-
-                  child: const Text(
-                    "Login",
-                    style: TextStyle(
-                      fontSize: 18,
-                    ),
-                  ),
+                  child: const Text("Login", style: TextStyle(fontSize: 18)),
                 ),
               ],
             ),

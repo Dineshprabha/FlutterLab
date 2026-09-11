@@ -32,7 +32,7 @@ class _MyAppState extends State<BasicWidget> {
 
                 // Title
                 const Text(
-                  'Presidency University',
+                  'Presidency University, Bangalore',
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
