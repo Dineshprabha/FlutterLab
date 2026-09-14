@@ -8,7 +8,6 @@ class Contacts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: const ContactsPage(),
     );
   }
@@ -29,24 +28,28 @@ class ContactsPage extends StatelessWidget {
       "phone": "9876543211",
       "image": "assets/images/profile.png",
     },
+
     {
-      "name": "Arun",
-      "phone": "9876543212",
+      "name": "Priya",
+      "phone": "9876543211",
       "image": "assets/images/profile.png",
     },
+
     {
-      "name": "Sneha",
-      "phone": "9876543213",
+      "name": "Priya",
+      "phone": "9876543211",
       "image": "assets/images/profile.png",
     },
+
     {
-      "name": "Kiran",
-      "phone": "9876543214",
+      "name": "Priya",
+      "phone": "9876543211",
       "image": "assets/images/profile.png",
     },
+
     {
-      "name": "Anjali",
-      "phone": "9876543215",
+      "name": "Priya",
+      "phone": "9876543211",
       "image": "assets/images/profile.png",
     },
   ];

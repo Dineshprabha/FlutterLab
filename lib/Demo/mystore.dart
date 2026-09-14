@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(Icons.shopping_cart),
             ),
+            IconButton(onPressed: (){}, icon: const Icon(Icons.search))
           ],
         ),
 
@@ -69,8 +70,6 @@ class MyApp extends StatelessWidget {
                     category('Fashion', Icons.checkroom),
                     category('Grocery', Icons.shopping_basket),
                     category('Beauty', Icons.face),
-                    category('Sports', Icons.sports_soccer),
-                    category('Sports', Icons.sports_soccer),
                     category('Sports', Icons.sports_soccer),
                   ],
                 ),
